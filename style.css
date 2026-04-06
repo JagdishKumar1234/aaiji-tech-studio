@@ -1,88 +1,125 @@
 body {
-  font-family: "Poppins", sans-serif;
-  background: linear-gradient(120deg, #f6f9fc, #eef1ff);
+  font-family: 'Poppins', sans-serif;
   margin: 0;
+  background: linear-gradient(120deg,#f6f9fc,#eef1ff);
 }
 
-/* Navbar */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
 .navbar {
-  padding: 20px;
-  background: white;
-}
-.navbar img {
-  height: 45px;
+  display:flex;
+  justify-content:space-between;
+  padding:20px;
+  background:#fff;
 }
 
-/* Hero */
-.hero {
-  display: flex;
-  padding: 80px 50px;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+.hero-inner {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:40px;
 }
 
 .hero h1 {
-  font-size: 42px;
-  background: linear-gradient(45deg, #6a11cb, #2575fc);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-size:40px;
 }
 
 .hero-img {
-  width: 300px;
-  animation: float 4s ease-in-out infinite;
+  width:300px;
+  animation: float 4s infinite;
 }
 
-/* Floating animation */
 @keyframes float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-15px);
-  }
-  100% {
-    transform: translateY(0);
-  }
+  50% { transform: translateY(-10px); }
 }
 
-/* Button */
 .btn {
-  background: linear-gradient(45deg, #6a11cb, #2575fc);
-  color: white;
-  padding: 10px 20px;
-  border-radius: 8px;
-  text-decoration: none;
+  background: linear-gradient(45deg,#6a11cb,#2575fc);
+  color:#fff;
+  padding:10px 20px;
+  border-radius:10px;
+  text-decoration:none;
 }
 
-/* Cards */
 .card {
-  background: white;
-  padding: 20px;
-  margin: 10px;
-  border-radius: 15px;
-  transition: 0.3s;
+  background:#fff;
+  padding:20px;
+  border-radius:15px;
+  margin:10px;
+  transition:.3s;
 }
-.card:hover {
-  transform: translateY(-10px);
+.card:hover { transform:translateY(-8px); }
+
+.service-box {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
 }
 
-/* Portfolio */
 .project-card {
-  background: white;
-  padding: 20px;
-  margin: 20px;
-  border-radius: 15px;
+  background:#fff;
+  padding:20px;
+  margin:10px 0;
+  border-radius:15px;
 }
 
-/* WhatsApp */
+.contact-form {
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  max-width:400px;
+  margin:auto;
+}
+
+.popup {
+  display:none;
+  position:fixed;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.5);
+}
+
+.popup-content {
+  background:#fff;
+  padding:20px;
+  margin:100px auto;
+  width:90%;
+  max-width:400px;
+  border-radius:10px;
+}
+
 .whatsapp {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #25d366;
-  padding: 15px;
-  border-radius: 50%;
-  color: white;
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  padding:15px;
+  border-radius:50%;
+  color:#fff;
+}
+
+.chatbot {
+  position:fixed;
+  bottom:80px;
+  right:20px;
+  background:#000;
+  color:#fff;
+  padding:10px 15px;
+  border-radius:20px;
+}
+
+/* Mobile */
+@media(max-width:768px){
+  .hero-inner { flex-direction:column; text-align:center; }
+  .hero h1 { font-size:28px; }
 }
