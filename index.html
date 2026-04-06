@@ -6,6 +6,16 @@
 <title>Aaiji Tech Studio</title>
 <meta name="description" content="Aaiji Tech Studio builds mobile apps, websites, and digital product experiences for startups and growing businesses.">
 <meta name="theme-color" content="#050a12" id="theme-color-meta">
+<script>
+  (function () {
+    try {
+      var savedTheme = localStorage.getItem('aaiji-theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    } catch (error) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  })();
+</script>
 <link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
