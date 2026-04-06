@@ -1,4 +1,22 @@
 // Reveal animation
+const themeButtons = document.querySelectorAll('[data-theme-toggle]');
+const applyTheme = (theme) => {
+  document.body.setAttribute('data-theme', theme);
+  themeButtons.forEach(button => {
+    const isActive = button.dataset.themeToggle === theme;
+    button.classList.toggle('is-active', isActive);
+    button.setAttribute('aria-pressed', String(isActive));
+  });
+  window.localStorage.setItem('aaiji-theme', theme);
+};
+
+const savedTheme = window.localStorage.getItem('aaiji-theme') || 'dark';
+applyTheme(savedTheme);
+
+themeButtons.forEach(button => {
+  button.addEventListener('click', () => applyTheme(button.dataset.themeToggle));
+});
+
 const revealGroups = [
   { selector: '.hero-copy, .section-head, .footer-left', variant: 'reveal-up' },
   { selector: '.hero-panel, .contact-form, .footer-meta', variant: 'reveal-right' },
