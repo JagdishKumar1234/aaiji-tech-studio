@@ -116,6 +116,13 @@ updateScrollMotion();
 // Mobile navigation
 const menuToggle = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.nav');
+const navLinks = Array.from(document.querySelectorAll('.nav a[href^="#"]'));
+const sectionTargets = navLinks
+  .map(link => {
+    const target = document.querySelector(link.getAttribute('href'));
+    return target ? { link, target } : null;
+  })
+  .filter(Boolean);
 
 if (menuToggle && nav) {
   const setMenuState = (isOpen) => {
@@ -138,6 +145,30 @@ if (menuToggle && nav) {
       setMenuState(false);
     }
   });
+}
+
+if (sectionTargets.length) {
+  const setActiveNavLink = () => {
+    const scrollPosition = window.scrollY + 130;
+    let activeItem = sectionTargets[0];
+
+    sectionTargets.forEach(item => {
+      if (item.target.offsetTop <= scrollPosition) {
+        activeItem = item;
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.toggle('is-active', activeItem && link === activeItem.link);
+    });
+  };
+
+  window.addEventListener('scroll', () => {
+    window.requestAnimationFrame(setActiveNavLink);
+  }, { passive: true });
+
+  window.addEventListener('resize', setActiveNavLink);
+  setActiveNavLink();
 }
 
 // Carousel

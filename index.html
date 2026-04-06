@@ -51,8 +51,8 @@
         <span class="theme-text-toggle__label theme-text-toggle__label--dark">Dark</span>
         <span class="theme-text-toggle__label theme-text-toggle__label--light">Light</span>
       </button>
-      <a class="btn btn--ghost" href="https://wa.me/918947038661" target="_blank" rel="noreferrer">WhatsApp</a>
-      <button onclick="openForm()" class="btn" type="button">Get Quote</button>
+      <a class="header-link" href="https://wa.me/918947038661" target="_blank" rel="noreferrer">WhatsApp</a>
+      <button onclick="openForm()" class="btn btn--header" type="button">Book a Call</button>
     </div>
   </div>
 </header>
@@ -62,26 +62,31 @@
     <div class="container hero-inner">
       <div class="hero-copy">
         <p class="eyebrow">Mobile apps • websites • UI/UX • brand systems</p>
-        <h1>We build polished apps and websites for ambitious brands.</h1>
+        <h1>Launch a stronger app or website with a studio that ships clearly.</h1>
         <p class="lead">
-          Aaiji Tech Studio creates Flutter apps, business websites, and brand-led digital experiences that are ready to launch.
+          Aaiji Tech Studio designs and builds Flutter apps, responsive websites, and branded digital experiences for growing businesses.
         </p>
         <div class="hero-actions">
           <a href="https://wa.me/918947038661" class="btn" target="_blank" rel="noreferrer">Start Your Project</a>
           <a href="#projects" class="btn btn--ghost">See Recent Work</a>
         </div>
+        <div class="hero-proof">
+          <span class="hero-proof__item">2+ launched app experiences</span>
+          <span class="hero-proof__item">Flutter specialist studio</span>
+          <span class="hero-proof__item">Fast, direct founder communication</span>
+        </div>
         <div class="hero-metrics">
           <div class="metric">
-            <div class="metric-value">Flutter-first</div>
-            <div class="metric-label">Android and iOS delivery from one scalable codebase</div>
+            <div class="metric-value">Flutter-first delivery</div>
+            <div class="metric-label">Android and iOS apps from one maintainable codebase</div>
           </div>
           <div class="metric">
-            <div class="metric-value">Studio speed</div>
-            <div class="metric-label">Fast iterations, direct communication, practical execution</div>
+            <div class="metric-value">Startup-ready speed</div>
+            <div class="metric-label">Tight iterations, quick decisions, practical execution</div>
           </div>
           <div class="metric">
-            <div class="metric-value">Business-focused</div>
-            <div class="metric-label">Built to support growth, trust, and real user workflows</div>
+            <div class="metric-value">Business-focused UX</div>
+            <div class="metric-label">Built for growth, trust, and day-to-day usability</div>
           </div>
         </div>
       </div>
@@ -92,18 +97,22 @@
           <div class="hero-list">
             <div class="hero-list-item">
               <span class="hero-list-title">Mobile apps</span>
-              <span class="hero-list-copy">Consumer apps, admin dashboards, loyalty products, and community platforms</span>
+              <span class="hero-list-copy">Consumer products, loyalty platforms, admin tools, and community apps</span>
             </div>
             <div class="hero-list-item">
               <span class="hero-list-title">Business websites</span>
-              <span class="hero-list-copy">Responsive company websites and landing pages built to convert clearly</span>
+              <span class="hero-list-copy">Responsive company sites and landing pages designed to convert clearly</span>
             </div>
             <div class="hero-list-item">
               <span class="hero-list-title">Brand-led UI</span>
-              <span class="hero-list-copy">Visual systems that make your product feel clear, modern, and trustworthy</span>
+              <span class="hero-list-copy">Visual systems that make your product feel premium, clear, and trustworthy</span>
             </div>
           </div>
-          <img src="assets/images/banner.png" class="hero-img" alt="Aaiji Tech Studio product showcase">
+          <div class="hero-studio-note">
+            <span class="hero-studio-note__label">Who we work with</span>
+            <p>Founders, retail businesses, community platforms, and teams that need a clean digital presence without agency drag.</p>
+          </div>
+          <img src="assets/images/banner.png" class="hero-img" alt="Aaiji Tech Studio product showcase" loading="eager" decoding="async">
         </div>
       </div>
     </div>
@@ -128,20 +137,30 @@
       <div class="section-head">
         <h2 class="section-title">About Us</h2>
         <p class="section-subtitle">
-          We help businesses launch modern apps and websites with sharper design, cleaner UX, and practical delivery.
+          We help businesses launch modern apps and websites with sharper design, cleaner UX, and reliable execution.
         </p>
       </div>
 
       <div class="about-story">
         <div class="about-copy panel panel--feature">
           <p class="section-kicker">Studio profile</p>
-          <h3>We blend product thinking, design clarity, and practical engineering.</h3>
+          <h3>We bring product thinking, clean design, and practical engineering into one focused studio flow.</h3>
           <p>
-            We shape product direction, simplify user journeys, and build experiences that feel clear and reliable.
+            We help shape product direction, simplify user journeys, and build experiences that feel clear from the first screen.
           </p>
           <p>
-            From loyalty apps to business websites, we deliver work that feels premium and ready to ship.
+            From loyalty apps to business websites, we deliver work that is polished enough to launch and practical enough to maintain.
           </p>
+          <div class="identity-strip">
+            <div class="identity-chip">
+              <strong>Direct studio support</strong>
+              <span>You work with a small execution-focused team, not a layered agency chain.</span>
+            </div>
+            <div class="identity-chip">
+              <strong>Launch-minded delivery</strong>
+              <span>We plan with rollout, store listing, and post-launch support in mind.</span>
+            </div>
+          </div>
         </div>
 
         <div class="about-grid">
@@ -166,11 +185,38 @@
     </div>
   </section>
 
+  <section class="why-us section">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">Why Choose Aaiji Tech Studio</h2>
+        <p class="section-subtitle">A focused studio setup for teams that want momentum, polish, and clear ownership.</p>
+      </div>
+
+      <div class="why-grid">
+        <article class="panel why-card">
+          <span class="why-index">01</span>
+          <h3>Clear product direction</h3>
+          <p>We shape structure, priorities, and UX before building so the final experience feels intentional.</p>
+        </article>
+        <article class="panel why-card">
+          <span class="why-index">02</span>
+          <h3>Design that feels premium</h3>
+          <p>We use branding, spacing, motion, and content hierarchy to make products feel more trustworthy.</p>
+        </article>
+        <article class="panel why-card">
+          <span class="why-index">03</span>
+          <h3>Practical launch support</h3>
+          <p>From responsive QA to app store links and post-launch refinement, we stay close to the release outcome.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
   <section class="services section" id="services">
     <div class="container">
       <div class="section-head">
         <h2 class="section-title">What We Do</h2>
-        <p class="section-subtitle">Focused services for businesses that need stronger digital products.</p>
+        <p class="section-subtitle">Focused services for businesses that need a better product foundation and a cleaner launch path.</p>
       </div>
 
       <div class="cards">
@@ -195,6 +241,16 @@
           <p>Visual consistency that connects your app, website, and customer-facing brand.</p>
         </div>
       </div>
+
+      <div class="service-rail">
+        <span class="service-pill">Discovery</span>
+        <span class="service-pill">Wireframes</span>
+        <span class="service-pill">UI Design</span>
+        <span class="service-pill">Flutter Development</span>
+        <span class="service-pill">Responsive Build</span>
+        <span class="service-pill">Deployment</span>
+        <span class="service-pill">Support</span>
+      </div>
     </div>
   </section>
 
@@ -202,29 +258,29 @@
     <div class="container">
       <div class="section-head">
         <h2 class="section-title">Work Process</h2>
-        <p class="section-subtitle">A simple, reliable flow that keeps projects clear from idea to launch.</p>
+        <p class="section-subtitle">A reliable path from idea to launch, with clear checkpoints and visible progress.</p>
       </div>
 
-      <div class="process-grid">
+      <div class="process-grid process-timeline">
         <article class="process-card card">
           <span class="process-step">01</span>
           <h3>Discover</h3>
-          <p>We learn your business, audience, goals, and the problem your product needs to solve.</p>
+          <p>We learn your business, audience, goals, and the problem the product needs to solve.</p>
         </article>
         <article class="process-card card">
           <span class="process-step">02</span>
           <h3>Plan</h3>
-          <p>We define structure, screens, features, and the right path for delivery.</p>
+          <p>We map the right structure, features, page flow, and delivery approach.</p>
         </article>
         <article class="process-card card">
           <span class="process-step">03</span>
           <h3>Design & Build</h3>
-          <p>We design, build, and iterate quickly with direct communication and visible progress.</p>
+          <p>We design, build, test, and iterate quickly with direct communication.</p>
         </article>
         <article class="process-card card">
           <span class="process-step">04</span>
           <h3>Launch & Support</h3>
-          <p>We polish the final experience, prepare launch assets, and support improvements after release.</p>
+          <p>We polish the final experience, prepare launch assets, and support next improvements.</p>
         </article>
       </div>
     </div>
@@ -243,9 +299,13 @@
             <h3>Balaji Points</h3>
             <span class="tag">Mobile App</span>
           </div>
-          <p>Points-management app for Shree Balaji Plywood & Hardware with rewards visibility and a clean mobile workflow.</p>
+          <p>Points management app for Shree Balaji Plywood & Hardware with cleaner rewards visibility and a simpler mobile workflow.</p>
+          <ul class="work-results">
+            <li>Built for faster reward tracking and clearer point visibility</li>
+            <li>Production-ready Android app published to Play Store</li>
+          </ul>
           <div class="work-actions">
-            <a href="https://play.google.com/store/apps/details?id=com.balaji.points" class="btn" target="_blank" rel="noreferrer">Play Store</a>
+            <a href="https://play.google.com/store/apps/details?id=com.balaji.points" class="store-badge store-badge--play" target="_blank" rel="noreferrer">Get it on Google Play</a>
             <a href="#balaji-points-ui" class="btn btn--ghost">See UI</a>
           </div>
         </article>
@@ -255,9 +315,13 @@
             <h3>MyBader – Seervi Samaj</h3>
             <span class="tag">Mobile App</span>
           </div>
-          <p>Community-focused mobile app for Seervi Samaj with polished UI and iOS deployment support.</p>
+          <p>Community-focused mobile app for Seervi Samaj with a welcoming onboarding flow and smoother community access.</p>
+          <ul class="work-results">
+            <li>Improved member engagement with community-first navigation</li>
+            <li>Published to App Store with iOS-ready onboarding screens</li>
+          </ul>
           <div class="work-actions">
-            <a href="https://apps.apple.com/ng/app/mybader-seervi-samaj-app/id6746418764" class="btn" target="_blank" rel="noreferrer">App Store</a>
+            <a href="https://apps.apple.com/ng/app/mybader-seervi-samaj-app/id6746418764" class="store-badge store-badge--app" target="_blank" rel="noreferrer">Download on the App Store</a>
             <a href="#mybader-ui" class="btn btn--ghost">See UI</a>
           </div>
         </article>
@@ -284,29 +348,29 @@
         <button class="carousel-btn carousel-btn--prev" type="button" aria-label="Previous screenshots" data-carousel-prev>‹</button>
         <div class="carousel-track gallery--phones" data-carousel-track tabindex="0" aria-label="Balaji Points screenshots carousel">
           <figure class="gallery-card">
-            <img src="assets/images/projects/balaji-points/home.png" alt="Balaji Points app home screen">
-            <figcaption>Home / Dashboard</figcaption>
-          </figure>
-          <figure class="gallery-card">
-            <img src="assets/images/projects/balaji-points/products.png" alt="Balaji Points products screen">
-            <figcaption>Products</figcaption>
-          </figure>
-          <figure class="gallery-card">
-            <img src="assets/images/projects/balaji-points/product-detail.png" alt="Balaji Points product details screen">
-            <figcaption>Product Details</figcaption>
-          </figure>
-          <figure class="gallery-card">
-            <img src="assets/images/projects/balaji-points/cart.png" alt="Balaji Points cart screen">
-            <figcaption>Cart</figcaption>
-          </figure>
-          <figure class="gallery-card">
-            <img src="assets/images/projects/balaji-points/notifications.png" alt="Balaji Points notifications screen">
-            <figcaption>Notifications</figcaption>
-          </figure>
-          <figure class="gallery-card">
-            <img src="assets/images/projects/balaji-points/profile.png" alt="Balaji Points profile screen">
-            <figcaption>Profile</figcaption>
-          </figure>
+          <img src="assets/images/projects/balaji-points/home.png" alt="Balaji Points app home screen" loading="lazy" decoding="async">
+          <figcaption>Home / Dashboard</figcaption>
+        </figure>
+        <figure class="gallery-card">
+          <img src="assets/images/projects/balaji-points/products.png" alt="Balaji Points products screen" loading="lazy" decoding="async">
+          <figcaption>Products</figcaption>
+        </figure>
+        <figure class="gallery-card">
+          <img src="assets/images/projects/balaji-points/product-detail.png" alt="Balaji Points product details screen" loading="lazy" decoding="async">
+          <figcaption>Product Details</figcaption>
+        </figure>
+        <figure class="gallery-card">
+          <img src="assets/images/projects/balaji-points/cart.png" alt="Balaji Points cart screen" loading="lazy" decoding="async">
+          <figcaption>Cart</figcaption>
+        </figure>
+        <figure class="gallery-card">
+          <img src="assets/images/projects/balaji-points/notifications.png" alt="Balaji Points notifications screen" loading="lazy" decoding="async">
+          <figcaption>Notifications</figcaption>
+        </figure>
+        <figure class="gallery-card">
+          <img src="assets/images/projects/balaji-points/profile.png" alt="Balaji Points profile screen" loading="lazy" decoding="async">
+          <figcaption>Profile</figcaption>
+        </figure>
         </div>
         <button class="carousel-btn carousel-btn--next" type="button" aria-label="Next screenshots" data-carousel-next>›</button>
       </div>
@@ -332,31 +396,31 @@
         <button class="carousel-btn carousel-btn--prev" type="button" aria-label="Previous screenshots" data-carousel-prev>‹</button>
         <div class="carousel-track gallery--phones" data-carousel-track tabindex="0" aria-label="My Bader screenshots carousel">
           <figure class="gallery-card">
-            <img src="assets/images/projects/mybader/welcome.png" alt="My Bader welcome screen">
+            <img src="assets/images/projects/mybader/welcome.png" alt="My Bader welcome screen" loading="lazy" decoding="async">
             <figcaption>Welcome Screen</figcaption>
           </figure>
           <figure class="gallery-card">
-            <img src="assets/images/projects/mybader/sign-in.png" alt="My Bader sign in screen">
+            <img src="assets/images/projects/mybader/sign-in.png" alt="My Bader sign in screen" loading="lazy" decoding="async">
             <figcaption>Sign In</figcaption>
           </figure>
           <figure class="gallery-card">
-            <img src="assets/images/projects/mybader/sign-up.png" alt="My Bader sign up screen">
+            <img src="assets/images/projects/mybader/sign-up.png" alt="My Bader sign up screen" loading="lazy" decoding="async">
             <figcaption>Create Account</figcaption>
           </figure>
           <figure class="gallery-card">
-            <img src="assets/images/projects/mybader/home-feed.png" alt="My Bader home feed screen">
+            <img src="assets/images/projects/mybader/home-feed.png" alt="My Bader home feed screen" loading="lazy" decoding="async">
             <figcaption>Home Feed</figcaption>
           </figure>
           <figure class="gallery-card">
-            <img src="assets/images/projects/mybader/explore.png" alt="My Bader explore screen">
+            <img src="assets/images/projects/mybader/explore.png" alt="My Bader explore screen" loading="lazy" decoding="async">
             <figcaption>Explore</figcaption>
           </figure>
           <figure class="gallery-card">
-            <img src="assets/images/projects/mybader/bader.png" alt="My Bader bader screen">
+            <img src="assets/images/projects/mybader/bader.png" alt="My Bader bader screen" loading="lazy" decoding="async">
             <figcaption>Bader</figcaption>
           </figure>
           <figure class="gallery-card">
-            <img src="assets/images/projects/mybader/support.png" alt="My Bader support screen">
+            <img src="assets/images/projects/mybader/support.png" alt="My Bader support screen" loading="lazy" decoding="async">
             <figcaption>Support</figcaption>
           </figure>
         </div>
@@ -369,7 +433,7 @@
     <div class="container">
       <div class="section-head">
         <h2 class="section-title">Case Study</h2>
-        <p class="section-subtitle">A quick look at how we built a practical business app.</p>
+        <p class="section-subtitle">A quick look at how we improved a practical business workflow with mobile-first design.</p>
       </div>
 
       <div class="case-grid">
@@ -384,7 +448,7 @@
         </div>
         <div class="panel">
           <h3>Outcome</h3>
-          <p>A production-ready Android app with better visibility and smoother daily operations.</p>
+          <p>A production-ready Android app with better visibility, simpler tracking, and smoother daily operations.</p>
         </div>
       </div>
     </div>
@@ -401,24 +465,48 @@
         <div class="testimonial-card">
           <img class="avatar" src="assets/images/client-1.svg" alt="Client photo">
           <div>
-            <p class="quote">"Excellent app development and reliable support throughout the project."</p>
+            <p class="quote">"Excellent app development and reliable support throughout the project. The team kept the flow simple and clear for our business."</p>
             <p class="byline"><b>Hemsingh Rajpurohit</b> — Sri Balaji Plywood & Hardware</p>
           </div>
         </div>
         <div class="testimonial-card">
           <img class="avatar" src="assets/images/client-2.svg" alt="Client photo">
           <div>
-            <p class="quote">"Clean UI, fast delivery, and clear communication from start to finish."</p>
-            <p class="byline"><b>Growing business client</b> — Website & design support</p>
+            <p class="quote">"The UI felt much more polished than our earlier direction, and communication stayed fast through every revision."</p>
+            <p class="byline"><b>Website project stakeholder</b> — Business website and design support</p>
           </div>
         </div>
         <div class="testimonial-card">
           <img class="avatar" src="assets/images/client-3.svg" alt="Client photo">
           <div>
-            <p class="quote">"Highly recommended for modern app development and responsive website work."</p>
-            <p class="byline"><b>Product-focused client</b> — Mobile app studio collaboration</p>
+            <p class="quote">"We appreciated the modern app thinking, the cleaner onboarding screens, and the attention to launch quality."</p>
+            <p class="byline"><b>Community app stakeholder</b> — Mobile app product collaboration</p>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq section" id="faq">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">Quick Answers</h2>
+        <p class="section-subtitle">A few common questions before you start your project.</p>
+      </div>
+
+      <div class="faq-list">
+        <details class="faq-item panel" open>
+          <summary>What kinds of projects do you take on?</summary>
+          <p>We work on Flutter mobile apps, responsive business websites, landing pages, UI refreshes, and launch-ready brand-led product screens.</p>
+        </details>
+        <details class="faq-item panel">
+          <summary>Can you help from idea stage, not just development?</summary>
+          <p>Yes. We can help with discovery, flow planning, wireframes, visual direction, development, deployment, and post-launch refinements.</p>
+        </details>
+        <details class="faq-item panel">
+          <summary>How quickly do you usually respond?</summary>
+          <p>We typically respond within one business day, and faster on active delivery conversations through WhatsApp.</p>
+        </details>
       </div>
     </div>
   </section>
@@ -426,15 +514,29 @@
   <section class="contact section" id="contact">
     <div class="container">
       <div class="section-head">
-        <h2 class="section-title">Let’s Build Something Strong</h2>
-        <p class="section-subtitle">Tell us what you want to build and we’ll help shape the right solution.</p>
+        <h2 class="section-title">Start Your Project</h2>
+        <p class="section-subtitle">Tell us what you want to build and we’ll help shape the right path for launch.</p>
       </div>
 
       <div class="contact-layout">
         <div class="panel contact-panel">
           <p class="section-kicker">Studio contact</p>
           <h3>Ready for your next app or website?</h3>
-          <p>We partner with founders and businesses that want practical design and development support.</p>
+          <p>We work with founders, businesses, and product teams that want cleaner UX, faster iteration, and direct communication.</p>
+          <div class="contact-meta-list">
+            <div class="contact-meta-item">
+              <strong>Email</strong>
+              <span>aaijitechstudio@gmail.com</span>
+            </div>
+            <div class="contact-meta-item">
+              <strong>Location</strong>
+              <span>India · Serving clients remotely</span>
+            </div>
+            <div class="contact-meta-item">
+              <strong>Reply time</strong>
+              <span>Usually within one business day</span>
+            </div>
+          </div>
           <div class="contact-points">
             <a href="mailto:aaijitechstudio@gmail.com">aaijitechstudio@gmail.com</a>
             <a href="https://wa.me/918947038661" target="_blank" rel="noreferrer">WhatsApp chat</a>
@@ -461,7 +563,7 @@
           </div>
         </div>
 
-        <form action="https://formsubmit.co/aajitechstudio@gmail.com" method="POST" class="contact-form panel">
+        <form action="https://formsubmit.co/aaijitechstudio@gmail.com" method="POST" class="contact-form panel">
           <input type="hidden" name="_captcha" value="false">
           <input type="text" name="name" placeholder="Name" required>
           <input type="email" name="email" placeholder="Email" required>
@@ -520,13 +622,18 @@
   <div class="popup-content" role="dialog" aria-modal="true" aria-labelledby="quote-title">
     <button onclick="closeForm()" class="close" type="button" aria-label="Close quote form">&times;</button>
     <h3 id="quote-title">Get Quote</h3>
-    <form action="https://formsubmit.co/aajitechstudio@gmail.com" method="POST">
+    <form action="https://formsubmit.co/aaijitechstudio@gmail.com" method="POST">
       <input type="text" name="name" placeholder="Name" required>
       <input type="email" name="email" placeholder="Email" required>
       <textarea name="message" placeholder="Tell us what you want to build"></textarea>
       <button class="btn" type="submit">Submit</button>
     </form>
   </div>
+</div>
+
+<div class="mobile-cta" aria-label="Mobile quick actions">
+  <a href="https://wa.me/918947038661" class="mobile-cta__primary" target="_blank" rel="noreferrer">WhatsApp</a>
+  <button onclick="openForm()" class="mobile-cta__secondary" type="button">Get Quote</button>
 </div>
 
 <a href="https://wa.me/918947038661" class="whatsapp" target="_blank" rel="noreferrer" aria-label="Chat on WhatsApp">💬</a>
