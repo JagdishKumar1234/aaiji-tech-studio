@@ -1,14 +1,14 @@
 :root{
-  --bg: #07111f;
-  --bg-soft: #0b1728;
-  --surface: rgba(10, 24, 40, 0.86);
-  --surface-strong: #0f2238;
-  --surface-muted: rgba(15, 34, 56, 0.68);
-  --text: #f6f8fb;
-  --muted: rgba(218, 228, 242, 0.76);
-  --border: rgba(148, 178, 217, 0.18);
-  --shadow: 0 28px 80px rgba(0, 0, 0, 0.34);
-  --shadow-sm: 0 16px 42px rgba(0, 0, 0, 0.24);
+  --bg: #050a12;
+  --bg-soft: #0a1220;
+  --surface: rgba(12, 22, 36, 0.9);
+  --surface-strong: #101d30;
+  --surface-muted: rgba(17, 29, 46, 0.78);
+  --text: #ffffff;
+  --muted: rgba(232, 239, 248, 0.86);
+  --border: rgba(150, 180, 218, 0.2);
+  --shadow: 0 28px 80px rgba(0, 0, 0, 0.42);
+  --shadow-sm: 0 16px 42px rgba(0, 0, 0, 0.32);
   --radius: 22px;
   --radius-sm: 16px;
   --accent: #35c3ff;
@@ -25,9 +25,9 @@ body{
   font-family:'Poppins', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   color: var(--text);
   background:
-    radial-gradient(900px 500px at 10% 0%, rgba(109,124,255,0.18), transparent 58%),
-    radial-gradient(800px 440px at 100% 8%, rgba(53,195,255,0.12), transparent 56%),
-    linear-gradient(180deg, #07111f 0%, #091523 34%, #0a1726 100%);
+    radial-gradient(900px 520px at 18% 0%, rgba(111, 90, 255, 0.16), transparent 58%),
+    radial-gradient(720px 420px at 100% 10%, rgba(31, 133, 255, 0.12), transparent 54%),
+    linear-gradient(180deg, #050a12 0%, #09111d 36%, #0b1421 100%);
 }
 
 a{ color:inherit; text-decoration:none; }
@@ -80,7 +80,7 @@ img{ max-width:100%; }
   top:0;
   z-index:20;
   backdrop-filter: blur(18px);
-  background: rgba(7, 17, 31, 0.72);
+  background: rgba(5, 10, 18, 0.74);
   border-bottom:1px solid rgba(148, 178, 217, 0.12);
 }
 
@@ -163,7 +163,7 @@ img{ max-width:100%; }
   padding: 10px 14px;
   border:1px solid var(--border);
   border-radius:999px;
-  background: rgba(11, 23, 40, 0.82);
+  background: rgba(10, 19, 32, 0.88);
 }
 
 .nav a{
@@ -196,7 +196,7 @@ img{ max-width:100%; }
 .btn:active{ transform: translateY(0); }
 
 .btn--ghost{
-  background: rgba(14, 30, 49, 0.78);
+  background: rgba(17, 29, 46, 0.92);
   border-color: var(--border);
   color: var(--text);
   box-shadow:none;
@@ -212,7 +212,7 @@ img{ max-width:100%; }
 .testimonial-card{
   border:1px solid var(--border);
   border-radius: var(--radius);
-  background: linear-gradient(180deg, rgba(15,34,56,0.88), rgba(10,22,36,0.88));
+  background: linear-gradient(180deg, rgba(16, 29, 47, 0.94), rgba(11, 20, 33, 0.96));
   box-shadow: var(--shadow-sm);
 }
 
@@ -255,8 +255,8 @@ img{ max-width:100%; }
   margin-bottom:16px;
   border-radius:999px;
   border:1px solid rgba(148, 178, 217, 0.18);
-  background: rgba(18, 38, 61, 0.84);
-  color: rgba(228,236,248,0.82);
+  background: rgba(16, 29, 47, 0.9);
+  color: rgba(240,245,251,0.92);
   font-size:12px;
   font-weight:700;
   text-transform:uppercase;
@@ -294,7 +294,7 @@ img{ max-width:100%; }
 .metric{
   padding:16px;
   border-radius:18px;
-  background: rgba(13, 29, 47, 0.86);
+  background: rgba(15, 27, 43, 0.94);
   border:1px solid rgba(148,178,217,0.15);
 }
 
@@ -318,7 +318,7 @@ img{ max-width:100%; }
   padding:24px;
   border-radius: 28px;
   border:1px solid rgba(148,178,217,0.18);
-  background: linear-gradient(180deg, rgba(16,35,56,0.92), rgba(10,22,36,0.92));
+  background: linear-gradient(180deg, rgba(15, 28, 45, 0.96), rgba(8, 16, 28, 0.98));
   box-shadow: var(--shadow);
 }
 
@@ -374,7 +374,7 @@ img{ max-width:100%; }
   padding:18px 20px;
   border:1px solid var(--border);
   border-radius: 22px;
-  background: rgba(11, 23, 40, 0.75);
+  background: rgba(9, 17, 29, 0.86);
   box-shadow: var(--shadow-sm);
 }
 
@@ -395,8 +395,8 @@ img{ max-width:100%; }
   padding:8px 12px;
   border-radius:999px;
   border:1px solid rgba(148,178,217,0.18);
-  background: rgba(18, 38, 61, 0.84);
-  color: rgba(238,243,249,0.88);
+  background: rgba(17, 29, 46, 0.92);
+  color: rgba(246,249,252,0.94);
   font-size:12px;
   font-weight:600;
 }
@@ -531,7 +531,7 @@ img{ max-width:100%; }
   padding:10px;
   border-radius: 24px;
   border:1px solid var(--border);
-  background: rgba(11, 23, 40, 0.75);
+  background: rgba(8, 16, 28, 0.9);
   box-shadow: var(--shadow-sm);
 }
 
@@ -582,7 +582,7 @@ img{ max-width:100%; }
   scroll-snap-align:start;
   border-radius: 18px;
   border:1px solid var(--border);
-  background: rgba(18, 38, 61, 0.92);
+  background: rgba(15, 27, 43, 0.98);
 }
 
 .gallery-card img{
@@ -590,7 +590,7 @@ img{ max-width:100%; }
   height:520px;
   object-fit:contain;
   display:block;
-  background: rgba(6, 12, 22, 0.92);
+  background: rgba(4, 10, 18, 0.98);
 }
 
 .gallery-card figcaption{
@@ -670,13 +670,29 @@ img{ max-width:100%; }
   display:inline-flex;
   align-items:center;
   justify-content:center;
+  gap:10px;
   padding: 10px 14px;
   border-radius:999px;
   border:1px solid rgba(148,178,217,0.18);
-  background: rgba(18, 38, 61, 0.84);
+  background: rgba(17, 29, 46, 0.92);
   color: var(--text);
   font-size:14px;
   font-weight:600;
+}
+
+.social-icon{
+  width:18px;
+  height:18px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  color: var(--accent);
+}
+
+.social-icon svg{
+  width:18px;
+  height:18px;
+  display:block;
 }
 
 .social-link:hover{
@@ -749,7 +765,7 @@ img{ max-width:100%; }
   padding:22px;
   border-radius:20px;
   border:1px solid var(--border);
-  background: linear-gradient(180deg, rgba(15,34,56,0.96), rgba(10,22,36,0.96));
+  background: linear-gradient(180deg, rgba(16, 29, 47, 0.98), rgba(9, 17, 29, 0.98));
   box-shadow: var(--shadow);
 }
 
@@ -798,7 +814,7 @@ img{ max-width:100%; }
   bottom:84px;
   padding:10px 14px;
   border-radius:999px;
-  background: rgba(18, 38, 61, 0.95);
+  background: rgba(17, 29, 46, 0.98);
   color: var(--text);
   font-weight:700;
 }
@@ -806,7 +822,7 @@ img{ max-width:100%; }
 .site-footer{
   padding: 36px 0 46px;
   border-top:1px solid rgba(148,178,217,0.12);
-  background: rgba(5, 12, 22, 0.68);
+  background: rgba(4, 10, 18, 0.82);
 }
 
 .footer-inner{
@@ -855,7 +871,7 @@ img{ max-width:100%; }
   padding:10px 14px;
   border-radius:999px;
   border:1px solid rgba(148,178,217,0.18);
-  background: rgba(18, 38, 61, 0.84);
+  background: rgba(17, 29, 46, 0.92);
   color: var(--text);
   font-size:14px;
   font-weight:600;
@@ -917,7 +933,6 @@ img{ max-width:100%; }
     justify-content:center;
   }
 
-  .nav-mobile-cta{ display:inline-flex; }
   .header-cta{ display:none; }
 
   .hero-inner,
