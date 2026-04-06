@@ -1,4 +1,4 @@
-// Fade-in animation on scroll
+// Scroll animation
 const elements = document.querySelectorAll('.card, .project-card');
 
 const observer = new IntersectionObserver(entries => {
@@ -16,3 +16,12 @@ elements.forEach(el => {
   el.style.transition = "0.6s ease";
   observer.observe(el);
 });
+
+// Popup
+function openForm() {
+  document.getElementById("popupForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("popupForm").style.display = "none";
+}
