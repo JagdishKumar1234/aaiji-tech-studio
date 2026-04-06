@@ -43,7 +43,7 @@ Here are some example projects:
 
 ## 📸 Preview  
 
-![Website Preview](banner.png)
+![Website Preview](assets/images/banner.png)
 
 ---
 
