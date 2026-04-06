@@ -1,22 +1,48 @@
-// Reveal animation
-const themeButtons = document.querySelectorAll('[data-theme-toggle]');
-const applyTheme = (theme) => {
-  document.body.setAttribute('data-theme', theme);
-  themeButtons.forEach(button => {
-    const isActive = button.dataset.themeToggle === theme;
-    button.classList.toggle('is-active', isActive);
-    button.setAttribute('aria-pressed', String(isActive));
-  });
-  window.localStorage.setItem('aaiji-theme', theme);
+// Theme toggle
+const themeIconToggle = document.querySelector('[data-theme-icon-toggle]');
+const themeStorageKey = 'aaiji-theme';
+let currentTheme = 'dark';
+
+const readStoredTheme = () => {
+  try {
+    return window.localStorage.getItem(themeStorageKey);
+  } catch (error) {
+    return null;
+  }
 };
 
-const savedTheme = window.localStorage.getItem('aaiji-theme') || 'dark';
+const storeTheme = (theme) => {
+  try {
+    window.localStorage.setItem(themeStorageKey, theme);
+  } catch (error) {
+    // Ignore storage failures and continue with in-memory theme state.
+  }
+};
+
+const applyTheme = (theme) => {
+  currentTheme = theme;
+  document.documentElement.setAttribute('data-theme', theme);
+  document.body.setAttribute('data-theme', theme);
+  if (themeIconToggle) {
+    const isLight = theme === 'light';
+    themeIconToggle.classList.toggle('is-light', isLight);
+    themeIconToggle.setAttribute('aria-pressed', String(isLight));
+    themeIconToggle.setAttribute('aria-label', isLight ? 'Switch to dark theme' : 'Switch to light theme');
+  }
+  storeTheme(theme);
+};
+
+const savedTheme = readStoredTheme() || 'dark';
 applyTheme(savedTheme);
 
-themeButtons.forEach(button => {
-  button.addEventListener('click', () => applyTheme(button.dataset.themeToggle));
-});
+if (themeIconToggle) {
+  themeIconToggle.addEventListener('click', () => {
+    const nextTheme = currentTheme === 'light' ? 'dark' : 'light';
+    applyTheme(nextTheme);
+  });
+}
 
+// Reveal animation
 const revealGroups = [
   { selector: '.hero-copy, .section-head, .footer-left', variant: 'reveal-up' },
   { selector: '.hero-panel, .contact-form, .footer-meta', variant: 'reveal-right' },
