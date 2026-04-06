@@ -7,75 +7,123 @@
 
 <link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
 
 <!-- Navbar -->
-<div class="navbar">
-  <img src="logo.png">
+<div class="navbar container">
+  <img src="images/logo.png">
+  <button onclick="openForm()" class="btn">Get Quote</button>
 </div>
 
 <!-- Hero -->
-<div class="hero">
-  <div class="hero-text">
-    <h1>We Build High-Quality Mobile Apps 🚀</h1>
-    <p>Helping startups turn ideas into powerful apps and websites.</p>
-    <a href="https://wa.me/918947038661" class="btn">Get Free Consultation</a>
-  </div>
+<section class="hero">
+  <div class="container hero-inner">
+    <div>
+      <h1>We Build Scalable Mobile Apps 🚀</h1>
+      <p>
+        Helping startups and businesses turn ideas into powerful digital products with modern UI and performance.
+      </p>
+      <a href="https://wa.me/918947038661" class="btn">Free Consultation</a>
+    </div>
 
-  <img src="banner.png" class="hero-img">
-</div>
+    <img src="images/banner.png" class="hero-img">
+  </div>
+</section>
+
+<!-- About -->
+<section class="about">
+  <div class="container">
+    <h2 class="section-title">About Us</h2>
+    <p>Aaiji Tech Studio builds mobile apps, websites, and branding solutions for startups and businesses.</p>
+    <p>We focus on clean UI, performance, and scalable architecture.</p>
+  </div>
+</section>
 
 <!-- Services -->
-<div class="services">
-  <h2>Our Services</h2>
-  <div class="service-box">
-    <div class="card">📱 Mobile Apps</div>
-    <div class="card">🌐 Websites</div>
-    <div class="card">🎨 Logo Design</div>
+<section class="services">
+  <div class="container">
+    <h2 class="section-title">Our Services</h2>
+    <div class="service-box">
+      <div class="card">📱 Mobile App Development</div>
+      <div class="card">🌐 Website Development</div>
+      <div class="card">🎨 Logo & Branding</div>
+    </div>
   </div>
-</div>
+</section>
 
 <!-- Portfolio -->
-<div class="portfolio">
-  <h2>Featured Projects</h2>
+<section class="portfolio">
+  <div class="container">
+    <h2 class="section-title">Featured Projects</h2>
 
-  <div class="project-card">
-    <h3>Balaji Points App</h3>
-    <a href="https://play.google.com/store/apps/details?id=com.balaji.points" class="btn">View</a>
+    <div class="project-card">
+      <h3>Balaji Points App</h3>
+      <a href="https://play.google.com/store/apps/details?id=com.balaji.points" class="btn">View</a>
+    </div>
+
+    <div class="project-card">
+      <h3>MyBader – Seervi Samaj</h3>
+      <a href="https://apps.apple.com/ng/app/mybader-seervi-samaj-app/id6746418764" class="btn">View</a>
+    </div>
+
   </div>
-
-  <div class="project-card">
-    <h3>MyBader – Seervi Samaj</h3>
-    <a href="https://apps.apple.com/ng/app/mybader-seervi-samaj-app/id6746418764" class="btn">View</a>
-  </div>
-
-</div>
+</section>
 
 <!-- Case Study -->
-<div class="case-study">
-  <h2>Case Study</h2>
-  <p><b>Client:</b> Hemsingh Rajpurohit</p>
-  <p>Sri Balaji Plywood & Hardware</p>
-</div>
+<section class="case-study">
+  <div class="container">
+    <h2 class="section-title">Case Study</h2>
+    <p><b>Client:</b> Hemsingh Rajpurohit</p>
+    <p>Sri Balaji Plywood & Hardware</p>
+  </div>
+</section>
 
-<!-- Testimonial -->
-<div class="testimonials">
-  <h2>Client Feedback</h2>
-  <p>"Great app development and support!"</p>
-</div>
+<!-- Testimonials -->
+<section class="testimonials">
+  <div class="container">
+    <h2 class="section-title">Client Feedback</h2>
+    <p>"Great app development and support!"</p>
+  </div>
+</section>
 
 <!-- Contact -->
-<div class="contact">
-  <p>📞 8947038661</p>
-  <p>📧 aajitechstudio@gmail.com</p>
+<section class="contact">
+  <div class="container">
+    <h2 class="section-title">Contact</h2>
+
+    <form action="https://formsubmit.co/aajitechstudio@gmail.com" method="POST" class="contact-form">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="text" name="name" placeholder="Name" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <textarea name="message" placeholder="Message"></textarea>
+      <button class="btn">Send</button>
+    </form>
+
+  </div>
+</section>
+
+<!-- Popup -->
+<div id="popupForm" class="popup">
+  <div class="popup-content">
+    <span onclick="closeForm()" class="close">&times;</span>
+    <h3>Get Quote</h3>
+    <form action="https://formsubmit.co/aajitechstudio@gmail.com" method="POST">
+      <input type="text" name="name" placeholder="Name" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <textarea name="message"></textarea>
+      <button class="btn">Submit</button>
+    </form>
+  </div>
 </div>
 
+<!-- WhatsApp -->
 <a href="https://wa.me/918947038661" class="whatsapp">💬</a>
 
-<script src="script.js"></script>
+<!-- Chat -->
+<a href="https://wa.me/918947038661" class="chatbot">Chat</a>
 
+<script src="script.js"></script>
 </body>
 </html>
