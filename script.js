@@ -1,5 +1,6 @@
 // Theme toggle
 const themeIconToggle = document.querySelector('[data-theme-icon-toggle]');
+const themeColorMeta = document.querySelector('#theme-color-meta');
 const themeStorageKey = 'aaiji-theme';
 let currentTheme = 'dark';
 
@@ -23,6 +24,9 @@ const applyTheme = (theme) => {
   currentTheme = theme;
   document.documentElement.setAttribute('data-theme', theme);
   document.body.setAttribute('data-theme', theme);
+  if (themeColorMeta) {
+    themeColorMeta.setAttribute('content', theme === 'light' ? '#f7faff' : '#050a12');
+  }
   if (themeIconToggle) {
     const isLight = theme === 'light';
     themeIconToggle.classList.toggle('is-light', isLight);
