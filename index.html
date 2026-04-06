@@ -36,6 +36,19 @@
     </nav>
 
     <div class="header-cta">
+      <button class="theme-icon-toggle" type="button" aria-label="Switch color theme" aria-pressed="false" data-theme-icon-toggle>
+        <span class="theme-icon theme-icon--sun" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4.2"></circle>
+            <path d="M12 2.5v2.2M12 19.3v2.2M4.93 4.93l1.56 1.56M17.51 17.51l1.56 1.56M2.5 12h2.2M19.3 12h2.2M4.93 19.07l1.56-1.56M17.51 6.49l1.56-1.56"></path>
+          </svg>
+        </span>
+        <span class="theme-icon theme-icon--moon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20.2 14.2A8.2 8.2 0 0 1 9.8 3.8a8.7 8.7 0 1 0 10.4 10.4Z"></path>
+          </svg>
+        </span>
+      </button>
       <a class="btn btn--ghost" href="https://wa.me/918947038661" target="_blank" rel="noreferrer">WhatsApp</a>
       <button onclick="openForm()" class="btn" type="button">Get Quote</button>
     </div>
@@ -447,14 +460,6 @@
     </div>
   </div>
 </footer>
-
-<div class="theme-switcher" aria-label="Theme switcher">
-  <span class="theme-switcher__label">Theme Mode</span>
-  <div class="theme-switcher__controls" role="group" aria-label="Choose website theme">
-    <button class="theme-toggle is-active" type="button" data-theme-toggle="dark" aria-pressed="true">Dark</button>
-    <button class="theme-toggle" type="button" data-theme-toggle="light" aria-pressed="false">Light</button>
-  </div>
-</div>
 
 <div id="popupForm" class="popup">
   <div class="popup-content" role="dialog" aria-modal="true" aria-labelledby="quote-title">
