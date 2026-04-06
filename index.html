@@ -4,313 +4,398 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Aaiji Tech Studio</title>
-
+<meta name="description" content="Aaiji Tech Studio builds mobile apps, websites, and digital product experiences for startups and growing businesses.">
 <link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<!-- Header -->
 <header class="site-header">
   <div class="container header-inner">
-    <a class="brand" href="#">
+    <a class="brand" href="#top" aria-label="Aaiji Tech Studio home">
       <img src="assets/images/logo.png" alt="Aaiji Tech Studio" class="logo">
       <span class="brand-text">
         <span class="brand-name">Aaiji Tech Studio</span>
-        <span class="brand-tagline">Idea to App Store</span>
+        <span class="brand-tagline">Mobile App & Web Studio</span>
       </span>
     </a>
+
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
       <span></span>
       <span></span>
       <span></span>
     </button>
+
     <nav class="nav" id="site-nav">
+      <a href="#about">About</a>
       <a href="#services">Services</a>
+      <a href="#process">Process</a>
       <a href="#projects">Projects</a>
-      <a href="#testimonials">Testimonials</a>
       <a href="#contact">Contact</a>
-      <a class="btn btn--ghost nav-mobile-cta" href="https://wa.me/918947038661">WhatsApp</a>
+      <a class="btn btn--ghost nav-mobile-cta" href="https://wa.me/918947038661" target="_blank" rel="noreferrer">WhatsApp</a>
       <button onclick="openForm()" class="btn nav-mobile-cta" type="button">Get Quote</button>
     </nav>
+
     <div class="header-cta">
-      <a class="btn btn--ghost" href="https://wa.me/918947038661">WhatsApp</a>
+      <a class="btn btn--ghost" href="https://wa.me/918947038661" target="_blank" rel="noreferrer">WhatsApp</a>
       <button onclick="openForm()" class="btn" type="button">Get Quote</button>
     </div>
   </div>
 </header>
 
-<!-- Hero -->
-<section class="hero">
-  <div class="container hero-inner">
-    <div class="hero-copy">
-      <p class="eyebrow">Mobile apps • Websites • Branding</p>
-      <h1>Trusted partner for modern mobile & web products.</h1>
-      <p class="lead">
-        Aaiji Tech Studio helps startups and businesses turn ideas into scalable digital products with clean UI,
-        performance, and reliable delivery.
-      </p>
-      <div class="hero-actions">
-        <a href="https://wa.me/918947038661" class="btn">Let’s Discuss Your Project</a>
-        <a href="#projects" class="btn btn--ghost">View Work</a>
-      </div>
-      <div class="hero-metrics">
-        <div class="metric">
-          <div class="metric-value">Mobile-first</div>
-          <div class="metric-label">UI/UX focused delivery</div>
+<main id="top">
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">Mobile apps • websites • UI/UX • brand systems</p>
+        <h1>We build dark, polished digital products for ambitious brands.</h1>
+        <p class="lead">
+          Aaiji Tech Studio is a mobile app studio focused on Flutter apps, high-converting websites, and clean product
+          experiences. We turn ideas, business workflows, and early concepts into launch-ready digital products.
+        </p>
+        <div class="hero-actions">
+          <a href="https://wa.me/918947038661" class="btn" target="_blank" rel="noreferrer">Start Your Project</a>
+          <a href="#projects" class="btn btn--ghost">See Recent Work</a>
         </div>
-        <div class="metric">
-          <div class="metric-value">Fast</div>
-          <div class="metric-label">Clear communication</div>
+        <div class="hero-metrics">
+          <div class="metric">
+            <div class="metric-value">Flutter-first</div>
+            <div class="metric-label">Android and iOS delivery from one scalable codebase</div>
+          </div>
+          <div class="metric">
+            <div class="metric-value">Studio speed</div>
+            <div class="metric-label">Fast iterations, direct communication, practical execution</div>
+          </div>
+          <div class="metric">
+            <div class="metric-value">Business-focused</div>
+            <div class="metric-label">Built to support growth, trust, and real user workflows</div>
+          </div>
         </div>
-        <div class="metric">
-          <div class="metric-value">Scalable</div>
-          <div class="metric-label">Production-ready builds</div>
+      </div>
+
+      <div class="hero-media">
+        <div class="hero-panel">
+          <p class="hero-panel-label">What we help you launch</p>
+          <div class="hero-list">
+            <div class="hero-list-item">
+              <span class="hero-list-title">Mobile apps</span>
+              <span class="hero-list-copy">Consumer apps, admin dashboards, loyalty products, community platforms</span>
+            </div>
+            <div class="hero-list-item">
+              <span class="hero-list-title">Business websites</span>
+              <span class="hero-list-copy">Responsive company websites, landing pages, and conversion-focused web presence</span>
+            </div>
+            <div class="hero-list-item">
+              <span class="hero-list-title">Brand-led UI</span>
+              <span class="hero-list-copy">Visual systems that make your app and website feel reliable and modern</span>
+            </div>
+          </div>
+          <img src="assets/images/banner.png" class="hero-img" alt="Aaiji Tech Studio product showcase">
         </div>
       </div>
     </div>
+  </section>
 
-    <div class="hero-media">
-      <img src="assets/images/banner.png" class="hero-img" alt="Aaiji Tech Studio banner">
-    </div>
-  </div>
-</section>
-
-<!-- Trusted strip -->
-<section class="trusted">
-  <div class="container trusted-inner">
-    <p class="trusted-title">Trusted by startups and local businesses</p>
-    <div class="trusted-logos" aria-label="Client brands">
-      <span class="chip">Shree Balaji Plywood</span>
-      <span class="chip">Retail & Loyalty</span>
-      <span class="chip">Flutter Apps</span>
-      <span class="chip">Websites</span>
-      <span class="chip">Branding</span>
-    </div>
-  </div>
-</section>
-
-<!-- About -->
-<section class="about section">
-  <div class="container">
-    <div class="section-head">
-      <h2 class="section-title">About</h2>
-      <p class="section-subtitle">
-        We blend design and engineering to craft apps and websites that are intuitive, fast, and scalable.
-      </p>
-    </div>
-    <div class="about-grid">
-      <div class="panel">
-        <h3>Build with confidence</h3>
-        <p>From MVP to production, we ship clean UI and stable performance with a scalable architecture.</p>
-      </div>
-      <div class="panel">
-        <h3>Product-minded execution</h3>
-        <p>We focus on real user journeys, measurable outcomes, and maintainable code.</p>
-      </div>
-      <div class="panel">
-        <h3>Direct communication</h3>
-        <p>Quick updates, transparent timelines, and support after delivery.</p>
+  <section class="trusted">
+    <div class="container trusted-inner">
+      <p class="trusted-title">Built for startups, local businesses, and product-led teams</p>
+      <div class="trusted-logos" aria-label="Capabilities and industries">
+        <span class="chip">Flutter App Development</span>
+        <span class="chip">Android & iOS</span>
+        <span class="chip">Retail & Loyalty</span>
+        <span class="chip">Community Apps</span>
+        <span class="chip">Web Presence</span>
+        <span class="chip">Brand Identity</span>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Services -->
-<section class="services section" id="services">
-  <div class="container">
-    <div class="section-head">
-      <h2 class="section-title">Our Services</h2>
-      <p class="section-subtitle">Everything you need to launch, grow, and maintain your digital product.</p>
-    </div>
-    <div class="cards">
-      <div class="card">
-        <div class="card-icon">📱</div>
-        <h3>Mobile App Development (iOS & Android)</h3>
-        <p>High-performance apps for iOS and Android (Flutter), designed with clean UI, smooth UX, and scalable architecture.</p>
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">About Us</h2>
+        <p class="section-subtitle">
+          Inspired by the clarity and confidence of strong product studios, we position Aaiji Tech Studio as a focused
+          execution partner for mobile-first businesses without copying anyone else’s voice.
+        </p>
       </div>
-      <div class="card">
-        <div class="card-icon">🌐</div>
-        <h3>Website Development</h3>
-        <p>Fast, responsive websites and landing pages built with modern UI and best practices.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon">🎨</div>
-        <h3>Logo & Branding</h3>
-        <p>Brand identity and design systems that keep your product consistent across apps, web, and marketing.</p>
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- Portfolio -->
-<section class="portfolio section" id="projects">
-  <div class="container">
-    <div class="section-head">
-      <h2 class="section-title">Featured Work</h2>
-      <p class="section-subtitle">A few projects we’ve recently delivered.</p>
-    </div>
-
-    <div class="work-grid">
-      <article class="work-card">
-        <div class="work-top">
-          <h3>Balaji Points</h3>
-          <span class="tag">Mobile App</span>
+      <div class="about-story">
+        <div class="about-copy panel panel--feature">
+          <p class="section-kicker">Studio profile</p>
+          <h3>We combine product thinking, design discipline, and practical engineering.</h3>
+          <p>
+            Our role is not only to build screens. We help shape the product direction, reduce complexity, improve user
+            journeys, and deliver something a business can confidently share with customers.
+          </p>
+          <p>
+            Whether you need a loyalty app, a community platform, a business website, or a complete digital identity,
+            we focus on creating work that feels intentional, trustworthy, and launch-ready.
+          </p>
         </div>
-        <p>Points-management app for Shree Balaji Plywood & Hardware with carpenter + admin workflows.</p>
-        <div class="work-actions">
-          <a href="https://play.google.com/store/apps/details?id=com.balaji.points" class="btn">Play Store</a>
-          <a href="#balaji-points-ui" class="btn btn--ghost">See UI</a>
+
+        <div class="about-grid">
+          <div class="panel">
+            <h3>Mobile app studio mindset</h3>
+            <p>We prioritize speed, maintainability, and smooth user experience across Android and iOS.</p>
+          </div>
+          <div class="panel">
+            <h3>Clear collaboration</h3>
+            <p>Simple communication, visible progress, and direct feedback loops keep every build moving.</p>
+          </div>
+          <div class="panel">
+            <h3>Modern visual direction</h3>
+            <p>Interfaces are designed to feel current, premium, and aligned with your business identity.</p>
+          </div>
+          <div class="panel">
+            <h3>Practical delivery</h3>
+            <p>We focus on outcomes your team can use, ship, market, and grow with confidence.</p>
+          </div>
         </div>
-      </article>
+      </div>
+    </div>
+  </section>
 
-      <article class="work-card">
-        <div class="work-top">
-          <h3>MyBader – Seervi Samaj</h3>
-          <span class="tag">Mobile App</span>
+  <section class="services section" id="services">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">What We Do</h2>
+        <p class="section-subtitle">End-to-end services for businesses that need strong digital products, not just basic pages.</p>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <div class="card-icon">📱</div>
+          <h3>Mobile App Development</h3>
+          <p>Flutter-based Android and iOS apps with clean UI, smooth flows, scalable architecture, and business-ready performance.</p>
         </div>
-        <p>Community app experience for Seervi Samaj with a polished iOS release.</p>
-        <div class="work-actions">
-          <a href="https://apps.apple.com/ng/app/mybader-seervi-samaj-app/id6746418764" class="btn">App Store</a>
+        <div class="card">
+          <div class="card-icon">🌐</div>
+          <h3>Responsive Website Development</h3>
+          <p>Modern business websites and landing pages that look professional on desktop, tablet, and mobile.</p>
         </div>
-      </article>
-    </div>
-
-  </div>
-</section>
-
-<!-- Project Images -->
-<section class="project-images section" id="balaji-points-ui">
-  <div class="container">
-    <div class="section-head">
-      <h2 class="section-title">Project UI</h2>
-      <p class="section-subtitle">Balaji Points — selected screens (carousel)</p>
-    </div>
-
-    <div class="project-images-header">
-      <div>
-        <h3 class="project-images-title">Balaji Points — Mobile App</h3>
-        <p class="project-images-subtitle">Selected UI screens from the Balaji Points app.</p>
-      </div>
-      <a href="https://play.google.com/store/apps/details?id=com.balaji.points" class="btn">Open on Play Store</a>
-    </div>
-
-    <div class="carousel" data-carousel="balaji-points">
-      <button class="carousel-btn carousel-btn--prev" type="button" aria-label="Previous screenshots" data-carousel-prev>
-        ‹
-      </button>
-      <div class="carousel-track gallery--phones" data-carousel-track tabindex="0" aria-label="Balaji Points screenshots carousel">
-        <figure class="gallery-card">
-          <img src="assets/images/projects/balaji-points/home.png" alt="Balaji Points app home screen">
-          <figcaption>Home / Dashboard</figcaption>
-        </figure>
-        <figure class="gallery-card">
-          <img src="assets/images/projects/balaji-points/products.png" alt="Balaji Points products screen">
-          <figcaption>Products</figcaption>
-        </figure>
-        <figure class="gallery-card">
-          <img src="assets/images/projects/balaji-points/product-detail.png" alt="Balaji Points product details screen">
-          <figcaption>Product details</figcaption>
-        </figure>
-        <figure class="gallery-card">
-          <img src="assets/images/projects/balaji-points/cart.png" alt="Balaji Points cart screen">
-          <figcaption>Cart</figcaption>
-        </figure>
-        <figure class="gallery-card">
-          <img src="assets/images/projects/balaji-points/notifications.png" alt="Balaji Points notifications screen">
-          <figcaption>Notifications</figcaption>
-        </figure>
-        <figure class="gallery-card">
-          <img src="assets/images/projects/balaji-points/profile.png" alt="Balaji Points profile screen">
-          <figcaption>Profile</figcaption>
-        </figure>
-      </div>
-      <button class="carousel-btn carousel-btn--next" type="button" aria-label="Next screenshots" data-carousel-next>
-        ›
-      </button>
-    </div>
-  </div>
-</section>
-
-<!-- Case Study -->
-<section class="case-study section">
-  <div class="container">
-    <div class="section-head">
-      <h2 class="section-title">Case Study</h2>
-      <p class="section-subtitle">Balaji Points — built for a real retail & loyalty workflow.</p>
-    </div>
-    <div class="case-grid">
-      <div class="panel">
-        <h3>Client</h3>
-        <p><b>Hemsingh Rajpurohit</b></p>
-        <p>Sri Balaji Plywood & Hardware</p>
-      </div>
-      <div class="panel">
-        <h3>Outcome</h3>
-        <p>Streamlined point tracking for carpenters and shop management with transparent rewards.</p>
-      </div>
-      <div class="panel">
-        <h3>Platform</h3>
-        <p>Android release on Play Store with production-ready UI and performance.</p>
+        <div class="card">
+          <div class="card-icon">🧭</div>
+          <h3>Product UI/UX Design</h3>
+          <p>Thoughtful interfaces, clearer user journeys, and layouts built to increase trust and usability.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🎨</div>
+          <h3>Brand Identity Support</h3>
+          <p>Logo direction, visual consistency, and design systems that connect your app, website, and customer-facing brand.</p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Testimonials -->
-<section class="testimonials section" id="testimonials">
-  <div class="container">
-    <div class="section-head">
-      <h2 class="section-title">Testimonials</h2>
-      <p class="section-subtitle">What clients say about working with Aaiji Tech Studio.</p>
+  <section class="process section" id="process">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">Work Process</h2>
+        <p class="section-subtitle">A simple, reliable flow that keeps projects clear from idea to launch.</p>
+      </div>
+
+      <div class="process-grid">
+        <article class="process-card card">
+          <span class="process-step">01</span>
+          <h3>Discover</h3>
+          <p>We understand your business, audience, goals, and the exact problem the product needs to solve.</p>
+        </article>
+        <article class="process-card card">
+          <span class="process-step">02</span>
+          <h3>Plan</h3>
+          <p>We define structure, screens, features, and the right delivery path for app, web, and branding work.</p>
+        </article>
+        <article class="process-card card">
+          <span class="process-step">03</span>
+          <h3>Design & Build</h3>
+          <p>We craft the interface, develop the product, and iterate quickly with direct communication and visible progress.</p>
+        </article>
+        <article class="process-card card">
+          <span class="process-step">04</span>
+          <h3>Launch & Support</h3>
+          <p>We help polish the final experience, prepare release-ready assets, and support post-launch improvements.</p>
+        </article>
+      </div>
     </div>
-    <div class="testimonials-grid">
-      <div class="testimonial-card">
-        <img class="avatar" src="assets/images/client-1.svg" alt="Client photo">
+  </section>
+
+  <section class="portfolio section" id="projects">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">Featured Work</h2>
+        <p class="section-subtitle">Selected projects that reflect our mobile app studio and product-first approach.</p>
+      </div>
+
+      <div class="work-grid">
+        <article class="work-card">
+          <div class="work-top">
+            <h3>Balaji Points</h3>
+            <span class="tag">Mobile App</span>
+          </div>
+          <p>Points-management app for Shree Balaji Plywood & Hardware with carpenter workflows, admin access, rewards visibility, and a clean mobile experience.</p>
+          <div class="work-actions">
+            <a href="https://play.google.com/store/apps/details?id=com.balaji.points" class="btn" target="_blank" rel="noreferrer">Play Store</a>
+            <a href="#balaji-points-ui" class="btn btn--ghost">See UI</a>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <div class="work-top">
+            <h3>MyBader – Seervi Samaj</h3>
+            <span class="tag">Mobile App</span>
+          </div>
+          <p>Community-focused mobile app experience for Seervi Samaj with polished interface decisions and iOS deployment support.</p>
+          <div class="work-actions">
+            <a href="https://apps.apple.com/ng/app/mybader-seervi-samaj-app/id6746418764" class="btn" target="_blank" rel="noreferrer">App Store</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="project-images section" id="balaji-points-ui">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">Project UI</h2>
+        <p class="section-subtitle">A closer look at the Balaji Points app interface.</p>
+      </div>
+
+      <div class="project-images-header">
         <div>
-          <p class="quote">"Excellent app development and reliable support throughout the project."</p>
-          <p class="byline"><b>Hemsingh Rajpurohit</b> — Sri Balaji Plywood & Hardware</p>
+          <h3 class="project-images-title">Balaji Points</h3>
+          <p class="project-images-subtitle">Selected mobile app screens designed for day-to-day business usability.</p>
         </div>
+        <a href="https://play.google.com/store/apps/details?id=com.balaji.points" class="btn" target="_blank" rel="noreferrer">Open on Play Store</a>
       </div>
-      <div class="testimonial-card">
-        <img class="avatar" src="assets/images/client-2.svg" alt="Client photo">
-        <div>
-          <p class="quote">"Clean UI, fast delivery, and clear communication from start to finish."</p>
-          <p class="byline"><b>Client Name</b> — Business Name</p>
+
+      <div class="carousel" data-carousel="balaji-points">
+        <button class="carousel-btn carousel-btn--prev" type="button" aria-label="Previous screenshots" data-carousel-prev>‹</button>
+        <div class="carousel-track gallery--phones" data-carousel-track tabindex="0" aria-label="Balaji Points screenshots carousel">
+          <figure class="gallery-card">
+            <img src="assets/images/projects/balaji-points/home.png" alt="Balaji Points app home screen">
+            <figcaption>Home / Dashboard</figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <img src="assets/images/projects/balaji-points/products.png" alt="Balaji Points products screen">
+            <figcaption>Products</figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <img src="assets/images/projects/balaji-points/product-detail.png" alt="Balaji Points product details screen">
+            <figcaption>Product Details</figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <img src="assets/images/projects/balaji-points/cart.png" alt="Balaji Points cart screen">
+            <figcaption>Cart</figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <img src="assets/images/projects/balaji-points/notifications.png" alt="Balaji Points notifications screen">
+            <figcaption>Notifications</figcaption>
+          </figure>
+          <figure class="gallery-card">
+            <img src="assets/images/projects/balaji-points/profile.png" alt="Balaji Points profile screen">
+            <figcaption>Profile</figcaption>
+          </figure>
         </div>
+        <button class="carousel-btn carousel-btn--next" type="button" aria-label="Next screenshots" data-carousel-next>›</button>
       </div>
-      <div class="testimonial-card">
-        <img class="avatar" src="assets/images/client-3.svg" alt="Client photo">
-        <div>
-          <p class="quote">"Highly recommended for iOS/Android app development and modern websites."</p>
-          <p class="byline"><b>Client Name</b> — Business Name</p>
+    </div>
+  </section>
+
+  <section class="case-study section">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">Case Study</h2>
+        <p class="section-subtitle">How we approached a business workflow product with clarity and mobile usability in mind.</p>
+      </div>
+
+      <div class="case-grid">
+        <div class="panel">
+          <h3>Client</h3>
+          <p><b>Hemsingh Rajpurohit</b></p>
+          <p>Sri Balaji Plywood & Hardware</p>
+        </div>
+        <div class="panel">
+          <h3>Challenge</h3>
+          <p>Move from manual or fragmented reward tracking into a more transparent and easier mobile workflow.</p>
+        </div>
+        <div class="panel">
+          <h3>Outcome</h3>
+          <p>A production-ready Android app that supports point visibility, profile handling, and smoother day-to-day operations.</p>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- Contact -->
-<section class="contact section" id="contact">
-  <div class="container">
-    <div class="section-head">
-      <h2 class="section-title">Contact</h2>
-      <p class="section-subtitle">Tell us what you want to build — we’ll reply quickly.</p>
+  <section class="testimonials section" id="testimonials">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">Client Feedback</h2>
+        <p class="section-subtitle">What businesses appreciate about working with Aaiji Tech Studio.</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <img class="avatar" src="assets/images/client-1.svg" alt="Client photo">
+          <div>
+            <p class="quote">"Excellent app development and reliable support throughout the project."</p>
+            <p class="byline"><b>Hemsingh Rajpurohit</b> — Sri Balaji Plywood & Hardware</p>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <img class="avatar" src="assets/images/client-2.svg" alt="Client photo">
+          <div>
+            <p class="quote">"Clean UI, fast delivery, and clear communication from start to finish."</p>
+            <p class="byline"><b>Growing business client</b> — Website & design support</p>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <img class="avatar" src="assets/images/client-3.svg" alt="Client photo">
+          <div>
+            <p class="quote">"Highly recommended for modern app development and responsive website work."</p>
+            <p class="byline"><b>Product-focused client</b> — Mobile app studio collaboration</p>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <form action="https://formsubmit.co/aajitechstudio@gmail.com" method="POST" class="contact-form">
-      <input type="hidden" name="_captcha" value="false">
-      <input type="text" name="name" placeholder="Name" required>
-      <input type="email" name="email" placeholder="Email" required>
-      <textarea name="message" placeholder="Message"></textarea>
-      <button class="btn">Send</button>
-    </form>
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">Let’s Build Something Strong</h2>
+        <p class="section-subtitle">Share your idea, existing business workflow, or product goal and we’ll help shape the right solution.</p>
+      </div>
 
-  </div>
-</section>
+      <div class="contact-layout">
+        <div class="panel contact-panel">
+          <p class="section-kicker">Studio contact</p>
+          <h3>Ready for your next app or website?</h3>
+          <p>We work best with founders, local businesses, and teams that want a practical partner for design and development.</p>
+          <div class="contact-points">
+            <a href="mailto:aaijitechstudio@gmail.com">aaijitechstudio@gmail.com</a>
+            <a href="https://wa.me/918947038661" target="_blank" rel="noreferrer">WhatsApp chat</a>
+          </div>
+          <div class="social-links" aria-label="Social links">
+            <a class="social-link" href="https://www.linkedin.com/company/aaiji-tech-studio/" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="social-link" href="https://www.facebook.com/aaijitechstudio/" target="_blank" rel="noreferrer">Facebook</a>
+            <a class="social-link" href="https://www.instagram.com/aaijitechstudio/" target="_blank" rel="noreferrer">Instagram</a>
+          </div>
+        </div>
 
-<!-- Footer -->
+        <form action="https://formsubmit.co/aajitechstudio@gmail.com" method="POST" class="contact-form panel">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="text" name="name" placeholder="Name" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <textarea name="message" placeholder="Tell us about your app, website, or brand project"></textarea>
+          <button class="btn" type="submit">Send Inquiry</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
 <footer class="site-footer">
   <div class="container footer-inner">
     <div class="footer-left">
@@ -318,19 +403,27 @@
         <img src="assets/images/logo.png" alt="Aaiji Tech Studio" class="footer-logo">
         <div>
           <div class="footer-title">Aaiji Tech Studio</div>
-          <div class="footer-subtitle">Idea to App Store</div>
+          <div class="footer-subtitle">Mobile App & Web Studio</div>
         </div>
       </div>
-      <p class="footer-note">© 2026 Aaiji Tech Studio. All rights reserved.</p>
+      <p class="footer-note">Designing and building mobile apps, responsive websites, and brand-led digital experiences.</p>
     </div>
-    <div class="footer-links" aria-label="Legal links">
-      <a href="privacy.html" class="footer-link">Privacy Policy</a>
-      <a href="terms.html" class="footer-link">Terms & Conditions</a>
+
+    <div class="footer-meta">
+      <div class="social-links" aria-label="Footer social links">
+        <a class="social-link" href="https://www.linkedin.com/company/aaiji-tech-studio/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a class="social-link" href="https://www.facebook.com/aaijitechstudio/" target="_blank" rel="noreferrer">Facebook</a>
+        <a class="social-link" href="https://www.instagram.com/aaijitechstudio/" target="_blank" rel="noreferrer">Instagram</a>
+      </div>
+      <div class="footer-links" aria-label="Legal links">
+        <a href="privacy.html" class="footer-link">Privacy Policy</a>
+        <a href="terms.html" class="footer-link">Terms & Conditions</a>
+      </div>
+      <p class="footer-note footer-note--small">© 2026 Aaiji Tech Studio. All rights reserved.</p>
     </div>
   </div>
 </footer>
 
-<!-- Popup -->
 <div id="popupForm" class="popup">
   <div class="popup-content" role="dialog" aria-modal="true" aria-labelledby="quote-title">
     <button onclick="closeForm()" class="close" type="button" aria-label="Close quote form">&times;</button>
@@ -338,17 +431,14 @@
     <form action="https://formsubmit.co/aajitechstudio@gmail.com" method="POST">
       <input type="text" name="name" placeholder="Name" required>
       <input type="email" name="email" placeholder="Email" required>
-      <textarea name="message"></textarea>
-      <button class="btn">Submit</button>
+      <textarea name="message" placeholder="Tell us what you want to build"></textarea>
+      <button class="btn" type="submit">Submit</button>
     </form>
   </div>
 </div>
 
-<!-- WhatsApp -->
-<a href="https://wa.me/918947038661" class="whatsapp">💬</a>
-
-<!-- Chat -->
-<a href="https://wa.me/918947038661" class="chatbot">Chat</a>
+<a href="https://wa.me/918947038661" class="whatsapp" target="_blank" rel="noreferrer" aria-label="Chat on WhatsApp">💬</a>
+<a href="https://wa.me/918947038661" class="chatbot" target="_blank" rel="noreferrer">Chat</a>
 
 <script src="script.js"></script>
 </body>
