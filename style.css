@@ -76,7 +76,15 @@ h1,h2,h3{ margin:0; letter-spacing:-0.02em; }
   letter-spacing: 0.01em;
   white-space: nowrap;
 }
-.logo{ height:42px; width:auto; display:block; }
+.logo{
+  width: 42px;
+  height: 42px;
+  display:block;
+  border-radius: 12px;
+  border: 1px solid rgba(11,18,32,0.10);
+  background:#fff;
+  object-fit: cover;
+}
 .menu-toggle{
   display:none;
   width:46px;
