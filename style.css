@@ -243,18 +243,15 @@ body[data-theme="light"] .theme-icon-toggle{
 
 .theme-icon{
   position: absolute;
-  width: 19px;
-  height: 19px;
+  width: 22px;
+  height: 22px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   transition: transform .24s ease, opacity .24s ease;
-}
-
-.theme-icon svg{
-  width: 19px;
-  height: 19px;
-  display: block;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 700;
 }
 
 .theme-icon--sun{
