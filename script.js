@@ -178,27 +178,70 @@ document.querySelectorAll('[data-carousel]').forEach(carousel => {
   const next = carousel.querySelector('[data-carousel-next]');
   if (!track || !prev || !next) return;
 
-  const updateDisabled = () => {
-    const maxScrollLeft = track.scrollWidth - track.clientWidth;
-    prev.disabled = track.scrollLeft <= 2;
-    next.disabled = track.scrollLeft >= maxScrollLeft - 2;
+  let autoplayId = null;
+
+  const getScrollStep = () => {
+    const firstCard = track.querySelector('.gallery-card');
+    const cardWidth = firstCard ? firstCard.getBoundingClientRect().width : 220;
+    const styles = window.getComputedStyle(track);
+    const gap = parseFloat(styles.columnGap || styles.gap || '12') || 12;
+    return cardWidth + gap;
+  };
+
+  const scrollToPosition = (position) => {
+    track.scrollTo({ left: position, behavior: 'smooth' });
   };
 
   const scrollByCard = (direction) => {
-    const firstCard = track.querySelector('.gallery-card');
-    const cardWidth = firstCard ? firstCard.getBoundingClientRect().width : 320;
-    const styles = window.getComputedStyle(track);
-    const gap = parseFloat(styles.columnGap || styles.gap || '16') || 16;
-    track.scrollBy({ left: direction * (cardWidth + gap), behavior: 'smooth' });
+    const maxScrollLeft = track.scrollWidth - track.clientWidth;
+    const step = getScrollStep();
+    const nextPosition = track.scrollLeft + (direction * step);
+
+    if (direction > 0 && track.scrollLeft >= maxScrollLeft - 4) {
+      scrollToPosition(0);
+      return;
+    }
+
+    if (direction < 0 && track.scrollLeft <= 4) {
+      scrollToPosition(maxScrollLeft);
+      return;
+    }
+
+    scrollToPosition(Math.max(0, Math.min(nextPosition, maxScrollLeft)));
   };
 
-  prev.addEventListener('click', () => scrollByCard(-1));
-  next.addEventListener('click', () => scrollByCard(1));
+  const stopAutoplay = () => {
+    if (autoplayId) {
+      window.clearInterval(autoplayId);
+      autoplayId = null;
+    }
+  };
 
-  track.addEventListener('scroll', () => window.requestAnimationFrame(updateDisabled), { passive: true });
-  window.addEventListener('resize', updateDisabled);
+  const startAutoplay = () => {
+    stopAutoplay();
+    autoplayId = window.setInterval(() => {
+      scrollByCard(1);
+    }, 2600);
+  };
 
-  updateDisabled();
+  prev.addEventListener('click', () => {
+    scrollByCard(-1);
+    startAutoplay();
+  });
+  next.addEventListener('click', () => {
+    scrollByCard(1);
+    startAutoplay();
+  });
+
+  carousel.addEventListener('mouseenter', stopAutoplay);
+  carousel.addEventListener('mouseleave', startAutoplay);
+  carousel.addEventListener('focusin', stopAutoplay);
+  carousel.addEventListener('focusout', startAutoplay);
+  track.addEventListener('touchstart', stopAutoplay, { passive: true });
+  track.addEventListener('touchend', startAutoplay, { passive: true });
+  window.addEventListener('resize', startAutoplay);
+
+  startAutoplay();
 });
 
 // Popup
