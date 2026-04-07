@@ -442,20 +442,29 @@
       <div class="contact-layout">
         <div class="panel contact-panel">
           <p class="section-kicker">Studio contact</p>
-          <h3>Ready for your next app or website?</h3>
-          <p>We work with founders, businesses, and teams that want clean design and practical delivery.</p>
+          <h3>Let’s plan your next build.</h3>
+          <p>Share your idea and we’ll help shape the right app, website, or product direction.</p>
           <div class="contact-meta-list">
             <div class="contact-meta-item">
-              <strong>Email</strong>
-              <span>aaijitechstudio@gmail.com</span>
+              <span class="contact-meta-icon" aria-hidden="true">✉</span>
+              <div class="contact-meta-copy">
+                <strong>Email</strong>
+                <span>aaijitechstudio@gmail.com</span>
+              </div>
             </div>
             <div class="contact-meta-item">
-              <strong>Location</strong>
-              <span>India · Serving clients remotely</span>
+              <span class="contact-meta-icon" aria-hidden="true">⌂</span>
+              <div class="contact-meta-copy">
+                <strong>Location</strong>
+                <span>India · Serving clients remotely</span>
+              </div>
             </div>
             <div class="contact-meta-item">
-              <strong>Reply time</strong>
-              <span>Usually within one business day</span>
+              <span class="contact-meta-icon" aria-hidden="true">⏱</span>
+              <div class="contact-meta-copy">
+                <strong>Reply time</strong>
+                <span>Usually within one business day</span>
+              </div>
             </div>
           </div>
           <div class="contact-points">
@@ -486,10 +495,31 @@
 
         <form action="https://formsubmit.co/aaijitechstudio@gmail.com" method="POST" class="contact-form panel">
           <input type="hidden" name="_captcha" value="false">
-          <input type="text" name="name" placeholder="Name" required>
-          <input type="email" name="email" placeholder="Email" required>
-          <textarea name="message" placeholder="Tell us about your app, website, or brand project"></textarea>
-          <button class="btn" type="submit">Send Inquiry</button>
+          <div class="contact-form-head">
+            <p class="contact-form-kicker">Project inquiry</p>
+            <h3>Send your project brief</h3>
+            <p>Tell us the basics and we’ll get back with the right next step.</p>
+          </div>
+
+          <div class="form-field">
+            <label for="contact-name">Name</label>
+            <input id="contact-name" type="text" name="name" placeholder="Your name" required>
+          </div>
+
+          <div class="form-field">
+            <label for="contact-email">Email</label>
+            <input id="contact-email" type="email" name="email" placeholder="your@email.com" required>
+          </div>
+
+          <div class="form-field form-field--full">
+            <label for="contact-message">Project details</label>
+            <textarea id="contact-message" name="message" placeholder="App, website, redesign, or support request"></textarea>
+          </div>
+
+          <div class="contact-form-footer">
+            <button class="btn" type="submit">Send Inquiry</button>
+            <span class="contact-form-note">Usually replies within one business day</span>
+          </div>
         </form>
       </div>
     </div>
