@@ -1125,19 +1125,32 @@ img{ max-width:100%; }
 
 .contact-layout{
   display:grid;
-  grid-template-columns: minmax(280px, 0.9fr) minmax(0, 1.1fr);
-  gap:14px;
+  grid-template-columns: minmax(280px, 0.92fr) minmax(0, 1.08fr);
+  gap:16px;
+  align-items:stretch;
   overflow-x: clip;
+}
+
+.contact .section-head{
+  align-items:flex-start;
+  justify-content:flex-start;
+  flex-direction:column;
+  gap:8px;
+}
+
+.contact .section-subtitle{
+  max-width:42ch;
 }
 
 .contact-panel{
   display:grid;
   gap:12px;
+  align-content:start;
 }
 
 .contact-points{
   display:grid;
-  gap:10px;
+  gap:8px;
 }
 
 .contact-meta-list{
@@ -1147,9 +1160,9 @@ img{ max-width:100%; }
 
 .contact-meta-item{
   display:flex;
-  align-items:center;
+  align-items:flex-start;
   gap:12px;
-  padding:12px 14px;
+  padding:13px 14px;
   border-radius:16px;
   border:1px solid rgba(148,178,217,0.14);
   background: rgba(9, 20, 34, 0.84);
@@ -1176,6 +1189,7 @@ img{ max-width:100%; }
 .contact-meta-copy{
   display:grid;
   gap:3px;
+  flex:1;
 }
 
 .contact-meta-item strong{
@@ -1248,11 +1262,11 @@ img{ max-width:100%; }
 }
 
 .contact-form{
-  display:grid;
-  grid-template-columns: 1fr 1fr;
-  gap:10px;
-  align-content:start;
-  padding:20px;
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+  align-self:stretch;
+  padding:22px;
   border-color: rgba(109,124,255,0.18);
   background:
     radial-gradient(280px 180px at 100% 0%, rgba(53,195,255,0.14), transparent 60%),
@@ -1270,10 +1284,9 @@ img{ max-width:100%; }
 }
 
 .contact-form-head{
-  grid-column:1 / -1;
   display:grid;
   gap:6px;
-  padding-bottom:8px;
+  padding-bottom:2px;
 }
 
 .contact-form-kicker{
@@ -1291,6 +1304,12 @@ img{ max-width:100%; }
 .contact-form-head p{
   color: var(--muted);
   font-size:.88rem;
+}
+
+.contact-form-grid{
+  display:grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap:12px;
 }
 
 .form-field{
@@ -1375,10 +1394,9 @@ img{ max-width:100%; }
 }
 
 .contact-form-footer{
-  grid-column:1 / -1;
   display:grid;
   gap:10px;
-  padding-top:8px;
+  padding-top:4px;
 }
 
 .contact-form-note{
@@ -1710,13 +1728,11 @@ img{ max-width:100%; }
   }
 
   .contact-form{
-    grid-template-columns: 1fr;
+    padding:18px;
   }
 
-  .form-field--full,
-  .contact-form-head,
-  .contact-form-footer{
-    grid-column:auto;
+  .contact-form-grid{
+    grid-template-columns: 1fr;
   }
 
   .contact-form-footer{
